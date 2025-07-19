@@ -474,13 +474,7 @@ class _IndexedStackBuilderState extends State<_IndexedStackBuilder> with _RouteA
             final isInactive = index != widget.activeIndex;
 
             // Always wrap with ExcludeSemantics and ExcludeFocus but control with excluding property
-            return ExcludeSemantics(
-              excluding: isInactive,
-              child: ExcludeFocus(
-                excluding: isInactive,
-                child: child,
-              ),
-            );
+            return  child;
           },
         ),
       ),
